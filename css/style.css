@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6{
 
 h1 {
     font-size: 50px;
-    line-height: 65px;
+    line-height: 70px;
 }
 
 h2 {
@@ -129,7 +129,7 @@ h2 {
 
 h3 {
     font-size: 20px;
-    line-height: 25px;
+    line-height: 30px;
     text-transform: uppercase;
 }
 
@@ -233,11 +233,12 @@ ul {
 }
 
 .section-title {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 45px;
+    /*line-height: 30px;*/
+    font-weight: 700;
     color: #333333;
-    margin-bottom: 50px;
-    text-transform: uppercase;
+    /*margin-bottom: 50px;*/
+    /*text-transform: uppercase;*/
     letter-spacing: 3px;
     letter-spacing: 3px;
     letter-spacing: 0.2rem;
@@ -441,20 +442,20 @@ ul {
     background: rgba(0, 0, 0, 0.8);
 }
 .slider-caption h1 , #main-slide .item.active .slider-content h1 {
-  font-size: 72px;
+  font-size: 80px;
   letter-spacing: 3px;
   letter-spacing: 3px;
   letter-spacing: 0.2rem;
   margin-bottom: 25px;
 }
-.slider-caption h5 , #main-slide .item.active .slider-content h5  {
+.slider-caption h2 , #main-slide .item.active .slider-content h2  {
     color: #3f3f3f;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
     letter-spacing: 3px;
     letter-spacing: 0.2rem;
 }
-.hero-parallax-bg .slider-caption h1 , .hero-parallax-bg .slider-caption h5 , .hero-particle-bg .slider-caption h1 , .hero-particle-bg .slider-caption h5 , .text-rotator-bg .slider-caption h5 {
+.hero-parallax-bg .slider-caption h1 , .hero-parallax-bg .slider-caption h2 , .hero-particle-bg .slider-caption h1 , .hero-particle-bg .slider-caption h2 , .text-rotator-bg .slider-caption h2 {
     color: #fff;
 }
 .text-rotator-bg h1 {
@@ -745,8 +746,10 @@ ul {
   width: 40px;
 }
 .single-service .media .media-body > p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
+    font-weight: 300;
+    color: #000;
 }
 .single-service .media:hover {
     border: 2px solid transparent;
@@ -1058,9 +1061,9 @@ span.count-description {
 }
 .single-pricing-table .package-item ul li {
     border-bottom: 1px dashed #e7e7e7;
-    color: #808080;
-    font-size: 14px;
-    font-weight: 400;
+    /*color: #808080;*/
+    font-size: 16px;
+    font-weight: 300;
     padding: 5px 0;
 }
 .single-pricing-table .pricing-buttons {
@@ -1277,4 +1280,110 @@ box-shadow: inset 0px 2px 25px -8px rgba(0,0,0,0.76);
     -webkit-transition: all 0.3s ease-in-out 0s;
             transition: all 0.3s ease-in-out 0s;
     vertical-align: middle;
+}
+
+.google-map-container{
+    margin-bottom: 50px;
+}
+
+#connected {
+    /*background-color: #0BAFA0;*/
+    width: 100%;
+    /*color: #ffffff;*/
+    text-align: center;
+}
+#connected .section-title {
+    /*color: #ffffff;*/
+}
+#connected .discription {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    position: relative;
+}
+#connected hr {
+    width: 200px;
+    text-align: center;
+}
+#connected .contact-item {
+    margin-top: 48px;
+}
+#connected .contact-item a {
+    padding-bottom: 12px;
+}
+#connected .contact-item a i {
+    font-size: 30px;
+    /*color: #ffffff;*/
+    padding-bottom: 16px;
+}
+#connected .contact-item h5 {
+    /*color: #FDF2F0;*/
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#connected .contact-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.portfolio-modal .modal-content {
+    border-radius: 0;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    min-height: 100%;
+    padding: 100px 0;
+    text-align: justify;
+}
+.portfolio-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+.portfolio-modal .close-modal {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+.portfolio-modal .close-modal:hover {
+    opacity: 0.3;
+}
+.portfolio-modal .close-modal .lr {
+    height: 75px;
+    width: 1px;
+    margin-left: 35px;
+    background-color: #2C3E50;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari and Chrome */
+    z-index: 1051;
+}
+.portfolio-modal .close-modal .lr .rl {
+    height: 75px;
+    width: 1px;
+    background-color: #2C3E50;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Safari and Chrome */
+    z-index: 1052;
+}
+.portfolio-modal .modal-backdrop {
+    opacity: 0;
+    display: none;
 }
